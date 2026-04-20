@@ -1,154 +1,121 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<title>DIGLY - Formation en anglais professionnel</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGLY - Formation en anglais professionnel</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+      background: #f7f8fc;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media(max-width: 768px){
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 
-<body class="is-preload">
+<body>
 
-<div id="wrapper" class="fade-in">
+<header>
+  <h1>DIGLY</h1>
+  <p>Formation en anglais professionnel pour équipes en entreprise</p>
+  <a class="btn" href="#contact">Réserver un appel</a>
+</header>
 
-	<!-- INTRO -->
-	<div id="intro">
-		<h1>DIGLY</h1>
-		<p>Formations en anglais professionnel pour entreprises et équipes internationales en France</p>
+<section>
+  <h2>Pourquoi DIGLY ?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Problème</h3>
+      <p>Les équipes perdent en efficacité en anglais dans les réunions et échanges internationaux.</p>
+    </div>
 
-		<ul class="actions">
-			<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Découvrir</a></li>
-		</ul>
-	</div>
+    <div class="card">
+      <h3>Solution</h3>
+      <p>Formations pratiques basées sur des situations réelles de travail.</p>
+    </div>
 
-	<!-- HEADER -->
-	<header id="header">
-		<a href="index.html" class="logo">DIGLY</a>
-	</header>
+    <div class="card">
+      <h3>Approche</h3>
+      <p>Apprentissage orienté business : réunions, emails, présentations.</p>
+    </div>
 
-	<!-- NAV -->
-	<nav id="nav">
-		<ul class="links">
-			<li class="active"><a href="index.html">Accueil</a></li>
-		</ul>
-	</nav>
+    <div class="card">
+      <h3>Résultat</h3>
+      <p>Plus de fluidité, plus de confiance, meilleure performance internationale.</p>
+    </div>
+  </div>
+</section>
 
-	<!-- MAIN -->
-	<div id="main">
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email : contact@digly.fr</p>
+    <p>Zone : France & entreprises internationales</p>
+  </div>
+</section>
 
-		<!-- HERO -->
-		<article class="post featured">
-			<header class="major">
-				<h2>Améliorez la communication en anglais de vos équipes</h2>
-				<p>
-					DIGLY aide les entreprises en France à renforcer leur communication professionnelle en anglais :
-					réunions, emails, présentations et interactions internationales.
-				</p>
-			</header>
-
-			<ul class="actions special">
-				<li><a href="#contact" class="button large primary">Réserver un appel</a></li>
-			</ul>
-		</article>
-
-		<!-- VALUE -->
-		<section class="posts">
-
-			<article>
-				<header>
-					<h2>Problème</h2>
-				</header>
-				<p>
-					Les équipes perdent en efficacité dans les environnements internationaux à cause d’un manque d’aisance en anglais professionnel.
-				</p>
-			</article>
-
-			<article>
-				<header>
-					<h2>Solution</h2>
-				</header>
-				<p>
-					Des formations concrètes, orientées business, pour améliorer la communication immédiate en contexte de travail.
-				</p>
-			</article>
-
-			<article>
-				<header>
-					<h2>Approche DIGLY</h2>
-				</header>
-				<p>
-					Apprentissage pratique basé sur des situations réelles : réunions, négociations, échanges internes.
-				</p>
-			</article>
-
-		</section>
-
-	</div>
-
-	<!-- FOOTER / CONTACT -->
-	<footer id="footer">
-
-		<section id="contact">
-			<form method="post" action="#">
-				<div class="fields">
-
-					<div class="field">
-						<label for="name">Nom</label>
-						<input type="text" id="name" />
-					</div>
-
-					<div class="field">
-						<label for="email">Email</label>
-						<input type="text" id="email" />
-					</div>
-
-					<div class="field">
-						<label for="message">Message</label>
-						<textarea id="message" rows="3"></textarea>
-					</div>
-
-				</div>
-
-				<ul class="actions">
-					<li><input type="submit" value="Envoyer" /></li>
-				</ul>
-			</form>
-		</section>
-
-		<section class="split contact">
-
-			<section>
-				<h3>Email</h3>
-				<p>contact@digly.fr</p>
-			</section>
-
-			<section>
-				<h3>Zone</h3>
-				<p>France & entreprises internationales</p>
-			</section>
-
-		</section>
-
-	</footer>
-
-	<!-- COPYRIGHT -->
-	<div id="copyright">
-		<ul>
-			<li>&copy; DIGLY</li>
-		</ul>
-	</div>
-
-</div>
-
-<!-- SCRIPTS -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<footer>
+  © DIGLY — Formation en anglais professionnel
+</footer>
 
 </body>
 </html>
